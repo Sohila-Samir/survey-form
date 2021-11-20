@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Montserrat+Alternates:wght@200&family=Orbitron&family=PT+Sans&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Census Survey Form</h1>
+        <hr>
+        <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam soluta nostrum cupiditate
+            mollitia dolor voluptates numquam repellendus, beatae facere, doloribus rerum ipsam vel nam ad fuga tempore
+            nesciunt! Blanditiis, in.
+        </p>
+
+        <form action="#" id="survey-form">
+            <fieldset id="primary-info">
+                <legend>Primary info</legend>
+
+                <label id="name-label" for="name">First Name:</label>
+                <input id="name" type="text" placeholder="Enter Your First Name" name="F-name" required>
+                <br>
+
+                <label id="name-2-label" for="name-2">Last Name:</label>
+                <input type="text" placeholder="Enter Your Last Name" id="name-2" name="L-name" required>
+                <br>
+
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" max="35" min="18" placeholder="Age" id="number" name="age" required>
+
+            </fieldset>
+            <fieldset id="gender">
+                <legend>gender</legend>
+
+                <select name="gender" id="dropdown">
+                    <option value="none">--Choose Your prononciation--</option>
+                    <option value="male">male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-binary</option>
+                    <option value="Agender">Agender</option>
+                    <option value="undefined">Undefined</option>
+                </select>
+            </fieldset>
+            <div id="form-collection">
+                <fieldset id="marital-status" required>
+                    <legend>Marital status</legend>
+
+                    <label for="single">
+                        <input type="radio" id="single" name="marital-status" value="single">
+                        Single</label>
+                    <br>
+
+                    <label for="married">
+                        <input type="radio" id="married" name="marital-status" value="married">
+                        Married</label>
+                    <br>
+
+                    <label for="divorced">
+                        <input type="radio" id="divorced" name="marital-status" value="divorced">
+                        Divorced</label>
+                    <br>
+
+                    <label for="widow-er">
+                        <input type="radio" id="widow-er" name="marital-status" value="widow-er">
+                        Widow/widower</label>
+                </fieldset>
+                <fieldset id="idk" required>
+                    <legend>idk for now</legend>
+
+                    <label for="employed">
+                        <input type="checkbox" id="employed" name="idk" value="employed">
+                        Employed
+                    </label>
+                    <br>
+
+                    <label for="unemployed">
+                        <input type="checkbox" id="unemployed" name="idk" value="unemployed">
+                        Unemployed
+                    </label>
+                    <br>
+
+                    <label for="student">
+                        <input type="checkbox" id="student" name="idk" value="student">
+                        Student
+                    </label>
+                    <br>
+
+                    <label for="freelancer">
+                        <input type="checkbox" id="freelancer" name="idk" value="freelancer">
+                        Freelancer
+                    </label>
+                </fieldset>
+                <hr>
+                <div id="feedback-container">
+                    <p>
+                        Any suggetions on how to improve this survery?
+                    </p>
+                    <br>
+                    <label id="email-label" for="email">
+                        Email:
+                        <input type="email" placeholder="Enter Your Email" name="email">
+                    </label>
+                    <br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"
+                        placeholder="Enter your feedback here..."></textarea>
+                    <br>
+                    <input id="submit" type="submit">
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

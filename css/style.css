@@ -1,0 +1,156 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-weight: 600;
+    background-image: url(https://wallpapercave.com/wp/wp3409933.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px) brightness(80%);
+    background-position: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  main {
+    padding: 2.3em;
+  }
+
+  #description {
+    text-align: center;
+    text-overflow: hidden;
+    font-size: 1.3vw;
+    line-height: 1.6em
+  }
+
+  hr {
+    border: 1px solid gold;
+    background-color: gold;
+  }
+
+  input {
+    display: inline-block;
+    border-radius: 0.5em;
+    font-family:'Montserrat Alternates', 'sans-serif';
+    font-weight: bold;
+    padding: 0.2em;
+    margin: 0.6em;
+  }
+
+  fieldset {
+    border-radius: 0.3em;
+    background-color: rgba(0,0,0, 0.6);
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+   legend {
+     background-color: gold;
+     padding: 0.3em;
+     border-radius: 0.2em;
+     color: black;
+  }
+
+  #primary-info, #gender {
+      width: fit-content;
+      display: inline;
+  }
+  #gender {
+      padding-top: 2.2em;
+  }
+  #gender select {
+      position: relative;
+      top: -1em;
+  }
+  #marital-status, #idk {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+
+  @media (min-width: 642px) and (max-width: 1020px) {
+    #gender {
+      padding-top: 7.5em;
+    }
+    #gender select {
+      display: relative;
+      top: -6.5em;
+    }
+  }
+
+  @media (min-width: 1020px) and (max-width: 2767px) {
+    #primary-info br {
+      display: none;
+    }
+    #description {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    input {
+      padding: 0.5em;
+      margin: 0.3em;
+    }
+    fieldset {
+      margin: 2em;
+      padding: 1em;
+    }
+    #marital-status {
+      width: 25%;
+    }
+    #idk {
+      width: 25%;
+    }
+    #feedback-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: stretch;
+      flex-wrap: no-wrap;
+      width: 40%;
+    }
+    #form-collection {
+      display: flex;
+    }
+  }
+
+
+  #feedback-container textarea, input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #feedback-container textarea {
+    padding: 10px;
+    width: 80%;
+  }
+
+  #feedback-container p {
+    text-shadow: 5px 5px 10px gold;
+    font-size: 1.3vw;
+  }
+
+  #submit {
+    border: none;
+    background-color: gold;
+    color: black;
+    width: 84%;
+    transition: all 0.3s;
+  }
+  #submit:hover {
+    background-color: rgb(255,170,0);
+  }
+
+  #feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }

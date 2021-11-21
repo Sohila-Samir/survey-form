@@ -44,7 +44,7 @@ hr {
   background-color: gold;
 }
 label {
-  font-size: 104%;
+  font-size: 98%;
 }
 
 input {
@@ -63,11 +63,11 @@ fieldset {
   margin-bottom: 2em;
 }
 
- legend {
-   background-color: gold;
-   padding: 0.3em;
-   border-radius: 0.2em;
-   color: black;
+legend {
+  background-color: gold;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  color: black;
 }
 #primary-info label {
   text-shadow: 2px 1px 10px gold;

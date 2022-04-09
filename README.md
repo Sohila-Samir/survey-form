@@ -3,6 +3,8 @@
 ## overview:
 This is a simple static responsive single page form
 
+## Url: https://sohila-samir.github.io/survey-form/
+
 ## technologies used
 ### client side:
 - HTML5
